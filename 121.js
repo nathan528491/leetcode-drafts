@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 /* First solution I came up with
 * I don't know why I couldn't think of anything less complex */
 
-=======
->>>>>>> main
 const prices =  [7,1,5,3,6,4]
 // const prices = [7,2,4,1]
 // const prices =  [4,7,1,2]
@@ -37,8 +34,8 @@ for (let i = 0; i < prices.length-1; i++) {
 	}
 }
 
-<<<<<<< HEAD
 console.log(`\nMaximum profit : ${maxProfit}`)
+
 
 /* Other solution */
 maxProfit = 0;
@@ -49,6 +46,3 @@ prices.forEach(price => {
 	maxProfit = Math.max(price - min, maxProfit)
 })
 console.log(`\nMaximum profit : ${maxProfit}`)
-=======
-console.log(`\nMaximum profit : ${maxProfit}`)
->>>>>>> main
