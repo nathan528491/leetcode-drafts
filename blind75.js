@@ -95,6 +95,7 @@ var maxProduct = function(nums) {
  * @name 153. Find Minimum in Rotated Sorted Array
  * @param {number[]} nums
  * @return {any[]}
+ * @status Accepted
  */
 var findMin = function(nums) {
 	return nums
@@ -103,9 +104,10 @@ var findMin = function(nums) {
 };
 
 /**
- * 217. Contains Duplicate
+ * @name 217. Contains Duplicate
  * @param {number[]} nums
  * @return {boolean}
+ * @status Accepted
  */
 const containsDuplicate = function (nums) {
 	let map = new Map()
