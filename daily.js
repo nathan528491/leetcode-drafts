@@ -35,6 +35,7 @@ const hasAllCodes = function (s, k) {
  * @name 1480. Running Sum of 1d Array
  * @param {number[]} nums
  * @return {number[]}
+ * @status Accepted
  */
 const runningSum = function (nums) {
     return nums.map((num, key, nums)=> {
