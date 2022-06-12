@@ -48,3 +48,34 @@ const runningSum = function (nums) {
 };
 
 console.log(runningSum([1,2,3,4]))
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ * @status Wrong Answer
+ */
+const  maximumUniqueSubarray = function(nums) {
+    let arr = []
+    let map = new Map()
+    let mapIndex = new Map()
+    let sum = 0
+    let newSum = 0
+    nums.forEach((num, index) => {
+        // IF THE NUMBER IS NEW
+        if(!map.has(num)) {
+            // ADD THE NUMBER TO THE MAP
+            map.set(num, num)
+            mapIndex.set(num, index)
+            // ELSE
+        } else {
+            // CALC SUM OF NUMBERS INBETWEEN THE TWO
+            newSum = 0
+            for(let i = mapIndex.get(num); i<index; i++) {
+                newSum+=nums[i]
+            }
+            sum = Math.max(sum, newSum)
+        }
+    })
+    return sum
+};
+
